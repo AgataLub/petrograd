@@ -20,7 +20,7 @@ body {
         margin: 0;
     }
 
-    main {
+    section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         grid-gap: 1rem;
@@ -34,6 +34,7 @@ article {
     padding: 10px;
     background-color: #800000;
     box-shadow: 3px 3px 3px #000000ab;
+    margin: 10px;
 }
 
 article > h1 {
