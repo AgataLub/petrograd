@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    background-color: #f5ebd5;
+}
+
+
+@supports (display: grid) {
+    main {
+        max-width: none;
+        margin: 0;
+    }
+
+    article {
+        margin: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 1rem;
+    }
+}
+
+article {
+    display: flex;
+    flex-flow: column;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #800000;
+    box-shadow: 3px 3px 3px #000000ab;
+}
+
+article > h1 {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 2em;
+    color:#fea33c;
+}
+
+article > p {
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    color: #f5ebd5;
+}
+
+span {
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #f5ebd5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+}
