@@ -1,3 +1,14 @@
+/*
+
+#f5f5f5   #ebebeb
+#ff533d
+#ab987a
+#0f1626
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans&display=swap');
+
 *,
 *:before,
 *:after {
@@ -5,13 +16,13 @@
 }
 
 body {
-    padding: 2rem;
-    background-color: #f5ebd5;
+    background-color: #f5f5f5;
 }
 
 
 @supports (display: grid) {
     main {
+         padding-top: 4rem;
         max-width: none;
         margin: 0;
     }
@@ -27,38 +38,135 @@ body {
     }
 }
 
+nav {
+    background-color: #f5f5f5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: right;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px #0f1626;
+    box-shadow: 3px 3px 3px #000000ab
+}
+
+nav > ul {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+nav > ul > li {
+    display: inline;
+    line-height: 2em;
+}
+
+h1 {
+    font-family: Lora, serif;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+    color: #ab987a;
+}
+
+h1::first-letter {
+    font-weight: 600;
+    color: #ff533d;
+    font-size: 1.5em;
+}
+
 article {
     display: flex;
     flex-flow: column;
-    border-radius: 15px;
+    align-items: center;
+    border-radius: 2px;
     padding: 10px;
-    background-color: #800000;
-    box-shadow: 3px 3px 3px #000000ab;
+    background-color: #ebebeb;
+/*    box-shadow: 3px 3px 3px #000000ab;*/
     margin: 10px;
 }
 
-article > h1 {
-    font-family: Georgia, serif;
-    font-style: italic;
-    font-size: 2em;
-    color:#fea33c;
+article > h2 {
+    font-family: Lora, serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color:#ab987a;
 }
 
 article > p {
-    font-family: Helvetica, sans-serif;
+    font-family: Open Sans, sans-serif;
     font-size: 1em;
-    color: #f5ebd5;
+    color: #ab987a;
 }
 
-span {
+article > ul {
     font-family: Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 0.8em;
     color: #f5ebd5;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+article > ul > li {
+    display: inline-block;
+    margin: 15px;
+
 }
 
 img {
     max-width: 100%;
     height: auto;
     padding: 5px;
+}
+
+.vege {
+    background-color: green;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.category {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8em;
+    padding-top: 15px;
+}
+
+.short {
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+button {
+    padding: 5px 10px 5px 10px;
+    font-size: 1em;
+    color: #A18B68;
+    border-color: #A18B68;
+    border: 1px solid;
+    letter-spacing: 1px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #97815E;
+}
+
+hr {
+    color: #ab987a;
+    width: 50%;
+}
+
+/*aesthethic */
+
+.crossed {
+    text-decoration: line-through;
+}
+
+.display_none
+{
+    display: none;
 }
