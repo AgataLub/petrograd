@@ -44,11 +44,12 @@ nav {
     top: 0px;
     left: 0px;
     width: 100%;
-    text-align: right;
+    text-align: left;
     font-family: Open Sans, sans-serif;
     text-transform: uppercase;
     border-bottom: 1px #0f1626;
-    box-shadow: 3px 3px 3px #000000ab
+    box-shadow: 3px 3px 3px #000000ab;
+    z-index: 5;
 }
 
 nav > ul {
@@ -95,6 +96,8 @@ article > h2 {
     color:#ab987a;
 }
 
+
+
 article > p {
     font-family: Open Sans, sans-serif;
     font-size: 1em;
@@ -109,12 +112,17 @@ article > ul {
     display: flex;
     position: relative;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 article > ul > li {
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
 
+}
+
+article:hover {
+ filter: brightness(102%) drop-shadow(4px 4px 0px #ab987a);
 }
 
 img {
@@ -129,19 +137,32 @@ img {
     border-radius: 3px;
 }
 
+.soldout {
+    background-color: grey;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.price, .discount {
+    background-color: #ff533d;
+    padding: 4px;
+    border-radius: 3px;
+}
+
 .category {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.8em;
     padding-top: 15px;
 }
-
+darkslategrey
 .short {
     letter-spacing: 1px;
     padding-bottom: 15px;
 }
 
 button {
+    margin-top: 20px;
     padding: 5px 10px 5px 10px;
     font-size: 1em;
     color: #A18B68;
@@ -152,7 +173,7 @@ button {
 }
 
 button:hover {
-    background-color: #97815E;
+    background-color: #D0C5B4;
 }
 
 hr {

@@ -9,12 +9,11 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
 
     <main>
 
         <nav>
-            <span class="logo">Petrograd</span>
+            <span class="title">Petrograd</span>
 
             <ul>
                 <li><a href="index.html" class="hvr-outline-in">Home</a></li>
@@ -24,49 +23,58 @@
             </ul>
         </nav>
 
-
-        <h1>Starters</h1>
-        <section id="starter">
-
-            <template id="productTemplate">
-                <article class="dish">
-                    <h2>Title</h2>
-                    <img class="picture">
-                    <p class="category"></p>
-                    <hr>
-                    <p class="short"></p>
-                    <button>See details</button>
-                    <p class="long"></p>
-                     <ul>
-                        <li class="price"></li>
-                        <li class="discount"></li>
-                        <li class="vege"></li>
-                    </ul>
-                </article>
-            </template>
-
-        </section>
+        <details>
+            <summary>Filters</summary>
+            <button id="veggiefilter">Veggie dishes</button>
+            <button id="alcoholfilter">Alcohol free</button>
+            <button id="veggiefilter">Veggie dishes</button>
+        </details>
 
 
-        <section id="main">
+            <h1>Starters</h1>
+            <section id="starter">
 
-        </section>
+                <template id="productTemplate">
+                    <article class="dish">
+                        <h2>Title</h2>
+                        <img class="picture">
+                        <p class="category"></p>
+                        <hr>
+                        <p class="short"></p>
+                        <button>See details</button>
+                        <p class="long"></p>
+                        <ul>
+                            <li class="price"></li>
+                            <li class="discount"></li>
+                            <li class="vege"></li>
+                            <li class="soldout"></li>
+                        </ul>
+                    </article>
+                </template>
 
-        <section id="dessert">
+            </section>
 
-        </section>
+            <h1>Mains</h1>
+            <section id="main">
 
-        <section id="sideorders">
+            </section>
+            <h1>Desserts</h1>
+            <section id="dessert">
 
-        </section>
+            </section>
+            <h1>Side Orders</h1>
+            <section id="sideorders">
 
-        <section id="drinks">
+            </section>
+            <h1>Drinks</h1>
+            <section id="drinks">
 
-        </section>
+            </section>
 
     </main>
 
 
+ <script src="script.js"></script>
 
 </body>
 
