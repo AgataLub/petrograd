@@ -12,47 +12,53 @@
 
     <main>
 
-        <nav>
-            <span class="title">Petrograd</span>
+        <div class="menu">
+            <span class="title">
+                <h1>Petrograd</h1>
+            </span>
+            <nav>
+            </nav>
 
-            <ul>
-                <li><a href="index.html" class="hvr-outline-in">Home</a></li>
-                <li><a href="about.html" class="hvr-outline-in">About</a></li>
-                <li><a href="portfolio.html" class="hvr-outline-in">Staff</a></li>
-                <li><a href="contact.html" class="hvr-outline-in">Contact</a></li>
-            </ul>
-        </nav>
+            <details>
+                <summary>Filters</summary>
+                <button id="veggiefilter">Veggie dishes</button>
+                <button id="alcoholfilter">Alcohol free</button>
+            </details>
+        </div>
 
-        <details>
-            <summary>Filters</summary>
-            <button id="veggiefilter">Veggie dishes</button>
-            <button id="alcoholfilter">Alcohol free</button>
-        </details>
-
-                <template id="productTemplate">
-                    <article class="dish">
-                        <h2>Title</h2>
-                        <img class="picture">
-                        <p class="category"></p>
-                        <hr>
-                        <p class="short"></p>
-                        <button>See details</button>
-                        <p class="long"></p>
-                        <ul>
-                            <li class="price"></li>
-                            <li class="discount"></li>
-                            <li class="vege"></li>
-                            <li class="soldout"></li>
-                        </ul>
-                    </article>
-                </template>
+        <template id="productTemplate">
+            <article class="dish">
+                <h2>Title</h2>
+                <img class="picture">
+                <p class="category"></p>
+                <hr>
+                <p class="short"></p>
+                <button class="open_modal">See details</button>
+                <p class="long"></p>
+                <ul>
+                    <li class="price"></li>
+                    <li class="discount"></li>
+                    <li class="vege"></li>
+                    <li class="soldout"></li>
+                    <li class="alcohol"></li>
+                </ul>
+            </article>
+        </template>
 
         <div class="productlist"></div>
 
+        <div class="modal-background display_none">
+            <div class="modal-content">
+                <h3 class="modal-name">NAME</h3>
+                <img src="" alt="" class="modal-image" />
+                <p class="modal-description">LONG DESCRIPTION</p>
+                <h4 class="modal-price">PRICE</h4>
+            </div>
+        </div>
     </main>
 
 
- <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
