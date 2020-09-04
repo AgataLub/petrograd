@@ -180,9 +180,15 @@ function showDish(dish, myCopy) {
     }
 
 //once we have our data, ....
-function showDetails(data) {
+function showDetails(data, myProduct, product) {
+
+    const base = "https://kea-alt-del.dk/t5/site/imgs/";
+    const mediumImg = base + "medium/" + data.image + "-md.jpg";
+
+
   modal.querySelector(".modal-name").textContent = data.name;
   modal.querySelector(".modal-description").textContent = data.longdescription;
-  //...
+  modal.querySelector(".modal-image").src = mediumImg;
+    modal.querySelector(".modal-price").textContent = data.price + " kr";
   modal.classList.remove("display_none");
 }
